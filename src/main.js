@@ -1,8 +1,5 @@
 import * as THREE from "three";
-import { plane } from "three/examples/jsm/Addons.js";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import { distance } from "three/tsl";
-// import { Pane } from 'tweakPane'
 
 // initialize pane
 // const pane = new Pane();
