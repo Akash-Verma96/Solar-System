@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { plane } from "three/examples/jsm/Addons.js";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { distance } from "three/tsl";
 // import { Pane } from 'tweakPane'
 
 // initialize pane
@@ -132,6 +133,14 @@ const planets = [
       },
     ],
   },
+  {
+    name:"Jupiter",
+    radius:2,
+    distance:30,
+    speed:0.001,
+    material:mercuryMaterial,
+    moons:[]
+  }
    
 ];
 
@@ -219,7 +228,6 @@ window.addEventListener("resize", () => {
 // render loop
 const renderloop = () => {
 
-  sun.rotation.y += 0.001
 
   planetMeshes.forEach((planet,planetIndex)=>{
     planet.rotation.y += planets[planetIndex].speed
