@@ -20,7 +20,7 @@ h1{
 
 @media(max-width:750px){
     h1{
-        left:10%;
+        left: 9%;
         font-size: 22px;
         width: 80%;
         padding-top: 20px;
