@@ -1,0 +1,1 @@
+This is Solar System project for learnig basics of 3js concepts like texture.
